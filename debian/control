@@ -1,0 +1,39 @@
+Source: rpds-py
+Section: python
+Priority: optional
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Uploaders: Roland Mas <lolando@debian.org>
+Rules-Requires-Root: no
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-setuptools,
+ python3-all-dev,
+ pybuild-plugin-pyproject,
+ python3-hatchling,
+ python3-pytest,
+ python3-traitlets,
+ python3-maturin,
+ librust-pyo3-dev (>= 0.22.6),
+ librust-archery-dev,
+ librust-rpds-dev,
+ cargo,
+Testsuite: autopkgtest-pkg-pybuild
+Standards-Version: 4.7.0
+Homepage: https://github.com/crate-py/rpds
+Vcs-Browser: https://salsa.debian.org/python-team/packages/rpds-py
+Vcs-Git: https://salsa.debian.org/python-team/packages/rpds-py.git
+
+Package: python3-rpds-py
+Architecture: any
+Depends:
+ ${python3:Depends},
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Python bindings to Rust's persistent data structures (rpds)
+ Python bindings to the Rust rpds crate for persistent data structures.
+ .
+ What's here is quite minimal (in transparency, it was written
+ initially to support replacing pyrsistent in the referencing
+ library). If you see something missing (which is very likely), a PR
+ is definitely welcome to add it.

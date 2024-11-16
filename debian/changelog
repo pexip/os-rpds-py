@@ -1,0 +1,44 @@
+rpds-py (0.21.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * Depends on python3-all-dev, build for all supported Python versions.
+  * Bump Standards-Version to 4.7.0
+
+ -- Alexandre Detiste <tchet@debian.org>  Sat, 16 Nov 2024 17:30:40 +0100
+
+rpds-py (0.21.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+
+ -- Colin Watson <cjwatson@debian.org>  Mon, 11 Nov 2024 21:45:04 +0000
+
+rpds-py (0.20.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * Add debian/watch.
+  * New upstream release:
+    - Build with pyo3 0.22 (closes: #1078392).
+  * Enable autopkgtest-pkg-pybuild.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 03 Nov 2024 16:32:12 +0000
+
+rpds-py (0.12.0-3) unstable; urgency=medium
+
+  * Team upload.
+  * Fix version of pyo3 in Cargo.toml (Closes: #1061307).
+  * Removed 0002-AsPyPointer-is-not-unsafe.patch.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 19 Feb 2024 16:37:26 +0100
+
+rpds-py (0.12.0-2) unstable; urgency=medium
+
+  * Source-only upload for migration to testing.
+
+ -- Roland Mas <lolando@debian.org>  Tue, 14 Nov 2023 11:43:12 +0100
+
+rpds-py (0.12.0-1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Roland Mas <lolando@debian.org>  Fri, 10 Nov 2023 14:22:59 +0100
