@@ -3,10 +3,11 @@ ci:
     # pre-commit.ci doesn't have Rust installed
     - fmt
     - clippy
+    - zizmor
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-ast
       - id: check-docstring-first
@@ -24,7 +25,7 @@ repos:
       - id: fmt
       - id: clippy
   - repo: https://github.com/psf/black
-    rev: 24.10.0
+    rev: 25.1.0
     hooks:
       - id: black
   - repo: https://github.com/pre-commit/mirrors-prettier
@@ -32,6 +33,6 @@ repos:
     hooks:
       - id: prettier
   - repo: https://github.com/woodruffw/zizmor
-    rev: v0.1.6
+    rev: v0.8.0
     hooks:
       - id: zizmor

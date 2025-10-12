@@ -14,12 +14,12 @@ Build-Depends:
  python3-pytest,
  python3-traitlets,
  python3-maturin,
- librust-pyo3-dev (>= 0.22.6),
+ librust-pyo3-dev (>= 0.25.1),
  librust-archery-dev,
- librust-rpds-dev,
+ librust-rpds-dev (>= 1.1.1),
  cargo,
 Testsuite: autopkgtest-pkg-pybuild
-Standards-Version: 4.7.0
+Standards-Version: 4.7.2
 Homepage: https://github.com/crate-py/rpds
 Vcs-Browser: https://salsa.debian.org/python-team/packages/rpds-py
 Vcs-Git: https://salsa.debian.org/python-team/packages/rpds-py.git

@@ -1,0 +1,21 @@
+From: Colin Watson <cjwatson@debian.org>
+Date: Thu, 9 Oct 2025 01:01:25 +0100
+Subject: Drop generate-import-lib feature
+
+It's only needed for Windows, and isn't in Debian's pyo3 package.
+---
+ Cargo.toml | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+index a7e5928..1663947 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -13,6 +13,4 @@ archery = "1.2.1"
+ 
+ [dependencies.pyo3]
+ version = "0.25.1"
+-# To build extension for PyPy on Windows, "generate-import-lib" is needed:
+-# https://github.com/PyO3/maturin-action/issues/267#issuecomment-2106844429
+-features = ["extension-module", "generate-import-lib"]
++features = ["extension-module"]

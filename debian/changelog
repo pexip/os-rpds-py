@@ -1,3 +1,19 @@
+rpds-py (0.27.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Accept pyo3 0.26.
+
+ -- Colin Watson <cjwatson@debian.org>  Sun, 12 Oct 2025 21:55:10 +0100
+
+rpds-py (0.27.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release:
+    - Bump PyO3 to 0.25 (closes: #1114347).
+  * Standards-Version: 4.7.2.
+
+ -- Colin Watson <cjwatson@debian.org>  Thu, 09 Oct 2025 01:07:01 +0100
+
 rpds-py (0.21.0-2) unstable; urgency=medium
 
   * Team upload.
