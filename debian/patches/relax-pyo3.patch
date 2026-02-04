@@ -1,0 +1,20 @@
+From: Colin Watson <cjwatson@debian.org>
+Date: Sun, 12 Oct 2025 21:52:00 +0100
+Subject: Accept pyo3 0.26
+
+Last-Update: 2025-10-12
+---
+ Cargo.toml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Cargo.toml b/Cargo.toml
+index 1663947..9ea1ff8 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -12,5 +12,5 @@ rpds = "1.1.1"
+ archery = "1.2.1"
+ 
+ [dependencies.pyo3]
+-version = "0.25.1"
++version = ">=0.25.1,<0.27"
+ features = ["extension-module"]

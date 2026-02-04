@@ -17,7 +17,18 @@ REQUIREMENTS_IN = [  # this is actually ordered, as files depend on each other
     (path.parent / f"{path.stem}.in", path) for path in REQUIREMENTS.values()
 ]
 
-SUPPORTED = ["3.9", "3.10", "pypy3.10", "3.11", "3.12", "3.13"]
+SUPPORTED = [
+    "3.9",
+    "3.10",
+    "pypy3.10",
+    "3.11",
+    "pypy3.11",
+    "3.12",
+    "3.13",
+    "3.13t",
+    "3.14",
+    "3.14t",
+]
 LATEST = "3.13"
 
 nox.options.default_venv_backend = "uv|virtualenv"
@@ -72,7 +83,7 @@ def tests(session):
                     stdout=summary,
                 )
     else:
-        session.run("pytest", *session.posargs, TESTS)
+        session.run("pytest", "--parallel-threads=10", *session.posargs, TESTS)
 
 
 @session()
