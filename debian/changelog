@@ -1,4 +1,4 @@
-rpds-py (0.21.0-2+pexip25u1) pexip; urgency=medium
+rpds-py (0.21.0-2+pexip25u1) pexip-trixie; urgency=medium
 
   * Prepare Pexip packaging
 
