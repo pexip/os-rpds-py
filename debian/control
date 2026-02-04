@@ -17,7 +17,7 @@ Build-Depends:
  python3-maturin,
  librust-pyo3-dev (>= 0.25.1),
  librust-archery-dev,
- librust-rpds-dev (>= 1.1.1),
+ librust-rpds-dev (>= 1.1.0),
  cargo,
 Testsuite: autopkgtest-pkg-pybuild
 Standards-Version: 4.7.2

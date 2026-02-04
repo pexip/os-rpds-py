@@ -1,0 +1,24 @@
+Index: rpds-py/Cargo.toml
+===================================================================
+--- rpds-py.orig/Cargo.toml
++++ rpds-py/Cargo.toml
+@@ -8,7 +8,7 @@ name = "rpds"
+ crate-type = ["cdylib"]
+ 
+ [dependencies]
+-rpds = "1.1.1"
++rpds = "1.1.0"
+ archery = "1.2.1"
+ 
+ [dependencies.pyo3]
+Index: rpds-py/pyproject.toml
+===================================================================
+--- rpds-py.orig/pyproject.toml
++++ rpds-py/pyproject.toml
+@@ -1,5 +1,5 @@
+ [build-system]
+-requires = ["maturin>=1.9,<2.0"]
++requires = ["maturin>=1.8,<2.0"]
+ build-backend = "maturin"
+ 
+ [project]
