@@ -1,8 +1,9 @@
 Source: rpds-py
 Section: python
 Priority: optional
-Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Uploaders: Roland Mas <lolando@debian.org>
+Maintainer: Pexip AS <packaging@pexip.com>
+XSBC-Pexip-Original-Maintainer: Debian Python Team <team+python@tracker.debian.org>
+XSBC-Pexip-Original-Uploaders: Roland Mas <lolando@debian.org>
 Rules-Requires-Root: no
 Build-Depends:
  debhelper-compat (= 13),
@@ -23,6 +24,7 @@ Standards-Version: 4.7.0
 Homepage: https://github.com/crate-py/rpds
 Vcs-Browser: https://salsa.debian.org/python-team/packages/rpds-py
 Vcs-Git: https://salsa.debian.org/python-team/packages/rpds-py.git
+XS-Pexip-Upstream: http://deb.debian.org/debian/ trixie
 
 Package: python3-rpds-py
 Architecture: any
