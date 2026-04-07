@@ -1,3 +1,5 @@
+Relax build dependencies to work with versions in trixie
+
 Index: rpds-py/Cargo.toml
 ===================================================================
 --- rpds-py.orig/Cargo.toml
